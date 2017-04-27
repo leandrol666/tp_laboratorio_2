@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1493325466 source:/home/leandrol/Escritorio/TP_2_Cascara/main.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"funciones.h"
+
+1493324863 /home/leandrol/Escritorio/TP_2_Cascara/funciones.h
+
+1493325849 source:/home/leandrol/Escritorio/TP_2_Cascara/funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
