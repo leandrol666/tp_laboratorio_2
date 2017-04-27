@@ -12,6 +12,19 @@ typedef struct
 }EPersona;
 
 /**
+ * Muestra el menu principal
+ * @return la opcion escojida
+ */
+int menu();
+
+/**
+ * inicia el estado de la persona
+ * @param lista array de las personas a inicializar
+ * @param se le indica el maximo del array
+ */
+void inicializar(EPersona lista[], int);
+
+/**
  * Obtiene el primer indice libre del array.
  * @param lista el array se pasa como parametro.
  * @return el primer indice disponible
@@ -26,16 +39,33 @@ int obtenerEspacioLibre(EPersona lista[], int);
  */
 int buscarPorDni(EPersona lista[], int dni, int);
 
-int menu();
-
+/**
+ * Agrega un usuario a la lista de personas
+ * @param lista array de las personas 
+ * @param se le indica el maximo del array
+ */
 void agregar(EPersona lista[], int);
 
-void borrar(EPersona lista[], int);
-
+/**
+ * muestra una lista de personas ordenadas por nombre
+ * @param lista es el array de personas
+ * @param se le indica el maximo del array
+ */
 void mostrar(EPersona lista[], int);
 
-void inicializar(EPersona lista[], int);
+/**
+ * elimina un usuario de la lista de personas
+ * @param lista array de las personas 
+ * @param se le indica el maximo del array
+ */
+void borrar(EPersona lista[], int);
 
+/**
+ * muestra un grafico dividiendo a las personas en un rango de edades                                                                                  *
+ *
+ * @param lista array a utilizar en el grafico
+ * @param se le indica el maximo del array
+ */
 void grafico(EPersona lista[],int);
 
 #endif // FUNCIONES_H_INCLUDED
