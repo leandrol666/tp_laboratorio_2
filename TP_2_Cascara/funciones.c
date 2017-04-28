@@ -149,19 +149,23 @@ void borrar(EPersona lista[], int max)
         printf("%s\t%d\t%d\n", lista[aux].nombre, lista[aux].edad, lista[aux].dni);
         printf("Esta seguro de eliminar el usuario? s/n: \n");
         while(getchar() != '\n');
-        respuesta = getchar();
-        if(respuesta=='s')
+        scanf("%s", &respuesta);
+        switch (respuesta)
         {
-            if(lista[aux].estado==1)
-            {
-                lista[aux].estado=0;
-                printf("El usuario fue eliminado. \n");
-                return;
-            }
-        }
-        else
-        {
-            printf("Accion cancelada!\n");
+            case 's':
+                if(lista[aux].estado==1)
+                {
+                    lista[aux].estado=0;
+                    printf("El usuario fue eliminado. \n");
+                    return;
+                }
+                break;
+            case 'n':
+                printf("Accion cancelada!\n");
+                break;
+            default:
+                printf("Error de sintaxis\n");
+                break;
         }
     }
     return;
