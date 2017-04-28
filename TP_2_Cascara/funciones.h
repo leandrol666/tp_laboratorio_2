@@ -3,7 +3,6 @@
 
 typedef struct
 {
-    int id;
     char nombre[50];
     int edad;
     int dni;
