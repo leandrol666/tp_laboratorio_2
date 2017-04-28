@@ -89,7 +89,7 @@ void agregar(EPersona lista[], int max)
 
             for(contador=0;contador<max;contador++)
                 {
-                    if (auxDni==lista[contador].dni)
+                    if (auxDni==lista[contador].dni  && lista[contador].estado == 1)
                         {
                             printf("El DNI ya fue ingresado \n");
                             return;
